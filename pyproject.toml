@@ -10,7 +10,7 @@ name = "mmragsdk"
 dynamic = ['version']
 description = "A simple SDK for the mmRag Application, the github for the app can be found here: https://github.com/marcoslashpro/multimodal-rag.git"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "langchain>=0.3.25",
     "pydantic>=2.11.7",
