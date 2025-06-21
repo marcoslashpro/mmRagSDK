@@ -1,4 +1,4 @@
-from mmrag_sdk import Client
+from mmragsdk import Client
 from dotenv import load_dotenv
 import os
 

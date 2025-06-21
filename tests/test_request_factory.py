@@ -1,5 +1,5 @@
-from mmrag_sdk._requests.factory import  get_request
-from mmrag_sdk import URL
+from mmragsdk._requests.factory import  get_request
+from mmragsdk import URL
 from dotenv import load_dotenv
 import os
 from unittest.mock import ANY
