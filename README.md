@@ -2,9 +2,9 @@
 MmRAG-SDK is a simple Python SDK designed to make testing easier by eliminating the need to send HTTP requests from the terminal or script them manually.
 
 # 🚀 How to Use
-1. Set Up Your Environment
-I recommend using uv to manage your environment:
+1. Set Up Your Environment:
 
+I recommend using uv to manage your environment:
 ```
 uv add mmragsdk
 ```
@@ -12,8 +12,8 @@ That’s it! Your environment is ready.
 
 
 2. Initialize the SDK
-Import and initialize the Client:
 
+Import and initialize the Client:
 ```
 from mmragsdk import Client
 
