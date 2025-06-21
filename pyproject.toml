@@ -6,8 +6,8 @@ build-backend = 'hatchling.build'
 source = 'uv-dynamic-versioning'
 
 [project]
-name = "mmragsdk"
-version = ['version']
+name = "mmrag_sdk"
+dynamic = ['version']
 description = "A simple SDK for the mmRag Application, the github for the app can be found here: https://github.com/marcoslashpro/multimodal-rag.git"
 readme = "README.md"
 requires-python = ">=3.12"
