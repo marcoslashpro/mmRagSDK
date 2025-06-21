@@ -44,5 +44,5 @@ client.clean()
 # - ⚠️ DANGER: This method clears all stored data
 ```
 
-🎉 Have Fun!
+# 🎉 Have Fun!
 Enjoy a smooth and hassle-free testing experience with MmRAG-SDK. If you have questions or suggestions, feel free to reach out!
