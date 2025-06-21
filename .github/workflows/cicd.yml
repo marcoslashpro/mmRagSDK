@@ -12,13 +12,21 @@ jobs:
     steps:
       - uses: ./.github/workflows/tests.yml
 
+      - name: Set up .pypirc
+        run: |
+          echo "[pypi]" > ~/.pypirc
+          echo "username = __token__" >> ~/.pypirc
+          echo "password = ${{ secrets.PYPI_API_TOKEN }}" >> ~/.pypirc
+
       - name: setup environment
         run: |
           curl -LsSf https://astral.sh/uv/install.sh | sh
           uv sync
 
-      - name: pypi upload
+      - name: build stage
         run: |
           uv build
 
-
+      - name: publish on pypi
+        run: |
+          uv run pyton3 -m twine upload dist/*
