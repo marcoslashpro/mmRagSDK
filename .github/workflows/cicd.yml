@@ -12,6 +12,11 @@ jobs:
     steps:
       - uses: ./.github/workflows/tests.yml
 
+
+  publish-package:
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Set up .pypirc
         run: |
           echo "[pypi]" > ~/.pypirc
