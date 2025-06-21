@@ -1,0 +1,14 @@
+name: cicd.yml
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+
+  call-test-workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: ./.github/workflows/tests.yml
+
