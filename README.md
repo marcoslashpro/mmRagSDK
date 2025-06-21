@@ -21,7 +21,7 @@ client = Client(token='your_token_here')
 ```
 > 💡 Note: To obtain a token, please email me at tambascomarco35@gmail.com and I will generate one for you.
 
-3. Available Methods
+## Available Methods
 ```
 # Send a prompt
 client.chat(prompt="your prompt here")
