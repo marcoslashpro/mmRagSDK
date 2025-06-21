@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 from pydantic import BaseModel
-from mmrag_sdk._requests import factory, send
+from mmragsdk._requests import factory, send
 from requests import Response
 
 
