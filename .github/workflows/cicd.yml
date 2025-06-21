@@ -12,3 +12,13 @@ jobs:
     steps:
       - uses: ./.github/workflows/tests.yml
 
+      - name: setup environment
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          uv sync
+
+      - name: pypi upload
+        run: |
+          uv build
+
+
