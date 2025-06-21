@@ -7,8 +7,9 @@ I recommend using uv to manage your environment:
 
 ```
 uv add mmragsdk
-That’s it! Your environment is ready.
 ```
+That’s it! Your environment is ready.
+
 
 2. Initialize the SDK
 Import and initialize the Client:
