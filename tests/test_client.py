@@ -75,3 +75,7 @@ def test_invalid_token_clean_error():
   client.token = 'wrong token'
   response = client.clean()
   assert response.status_code == 403
+
+
+if os.path.exists(REAL_PATH):
+  os.remove(REAL_PATH)
