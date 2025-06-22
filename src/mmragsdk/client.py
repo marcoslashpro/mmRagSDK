@@ -44,7 +44,7 @@ class Client(BaseModel):
 
 if __name__ == "__main__":
   client = Client(
-    token=os.getenv("TOKEN"),
+    token=os.getenv("TOKEN_PAT"),
   )
 
   # response = client.chat(prompt="What is your name?")
