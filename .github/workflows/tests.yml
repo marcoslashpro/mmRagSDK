@@ -32,4 +32,6 @@ jobs:
           uv add tox-gh-actions
 
       - name: Test with tox
-        run: uvx tox -p
+        run: |
+          echo "${TOKEN_PAT}"
+          uvx tox -p
