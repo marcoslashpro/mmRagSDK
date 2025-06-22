@@ -53,6 +53,7 @@ deps = [
     "pytest>=8.4.0",
     "pytest-cov>=6.2.1",
 ]
+passenv = '*'
 commands = [
     [
         "pytest", { replace = "posargs", default = ["tests"], extend = true }
