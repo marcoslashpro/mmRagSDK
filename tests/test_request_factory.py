@@ -7,7 +7,6 @@ from unittest.mock import ANY
 
 TEST_API = "1234567890"
 TEST_INPUT = 'user123'
-load_dotenv()
 
 
 def test_get_chat_request():

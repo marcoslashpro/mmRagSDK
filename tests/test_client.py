@@ -11,7 +11,7 @@ load_dotenv()
 
 
 RANDOM_PATH = 'random_path'
-client = Client(token=os.getenv("TOKEN"))
+client = Client(token=os.getenv("TOKEN_PAT"))
 
 
 def test_missing_file_path_error():

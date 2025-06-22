@@ -3,6 +3,9 @@ on:
   - push
   - workflow_call
 
+env:
+  TOKEN_PAT: $${{ secrets.TOKEN_PAT }}
+
 jobs:
   test:
     runs-on: ${{ matrix.os }}
