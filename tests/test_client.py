@@ -1,3 +1,5 @@
+import unittest
+
 from mmragsdk import Client
 from dotenv import load_dotenv
 import os
@@ -10,9 +12,6 @@ load_dotenv()
 
 RANDOM_PATH = 'random_path'
 client = Client(token=os.getenv("TOKEN"))
-REAL_PATH = 'test.txt'
-with open(REAL_PATH, 'w') as f:
-  f.write('test')
 
 
 def test_missing_file_path_error():
@@ -43,9 +42,15 @@ def test_search_success():
 
 
 def test_upload_success():
-  response = client.upload(REAL_PATH)
+  path = 'test.txt'
+  with open(path, 'w') as f:
+    f.write('test')
+  response = client.upload(path)
 
   assert response.status_code == 200
+
+  if os.path.exists(path):
+    os.remove(path)
 
 
 def test_clean_success():
@@ -75,7 +80,3 @@ def test_invalid_token_clean_error():
   client.token = 'wrong token'
   response = client.clean()
   assert response.status_code == 403
-
-
-if os.path.exists(REAL_PATH):
-  os.remove(REAL_PATH)
