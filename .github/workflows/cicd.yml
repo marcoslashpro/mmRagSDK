@@ -8,6 +8,8 @@ jobs:
 
   call-test-workflow:
     uses: ./.github/workflows/tests.yml
+    secrets:
+      inherit
 
 
   publish-package:
