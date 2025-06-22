@@ -6,7 +6,14 @@ MmRAG-SDK is a simple Python SDK designed to make testing easier by eliminating 
 
 I recommend using uv to manage your environment:
 ```
+uv init .
 uv add mmragsdk
+```
+Otherwise, with pip:
+```
+python3 -m venv .venv
+. .venv/bin/activate
+pip install mmragsdk
 ```
 That’s it! Your environment is ready.
 
