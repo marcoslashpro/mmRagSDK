@@ -31,7 +31,6 @@ jobs:
           uv sync
           uv add tox-gh-actions
 
-      - name: Test with tox
+      - name: Test with pytest
         run: |
-          echo "${TOKEN_PAT}"
-          uvx tox -p
+          uv run pytest
